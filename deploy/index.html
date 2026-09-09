@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bearing Witness - 9/11</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23171d24'/%3E%3Crect x='10' y='8' width='5' height='18' fill='%23b08f4d'/%3E%3Crect x='17' y='11' width='5' height='15' fill='%23b08f4d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner" id="headerInner">
+    <button type="button" class="header-collapse" id="headerCollapse" aria-expanded="true" aria-controls="modeSub">Hide description <span class="header-collapse-arrow" aria-hidden="true">⌃</span></button>
+    <p class="kicker">Lower Manhattan · September 11, 2001</p>
+    <h1>Bearing Witness - 9/11</h1>
+    <p class="sub" id="modeSub">The documented movements of photographers and film crews who were present that morning, told through what can be confirmed, what can be reasonably reconstructed, and what remains estimated.</p>
+    <div class="mode-switch" id="modeSwitch" role="group" aria-label="View">
+      <button class="mode-btn active" data-mode="movers" aria-pressed="true">Movement Timeline</button>
+      <button class="mode-btn" data-mode="static" aria-pressed="false">Fixed Vantage Points</button>
+    </div>
+  </div>
+</header>
+
+<div class="app">
+  <aside class="sidebar">
+    <div id="moversSidebar">
+      <h2>PEOPLE (or click their marker on the map)</h2>
+      <div class="filter-tabs" id="filterTabs" role="group" aria-label="Filter people">
+        <button class="filter-tab active" data-filter="all" aria-pressed="true">All (10)</button>
+        <button class="filter-tab" data-filter="day" aria-pressed="false">On the day</button>
+        <button class="filter-tab" data-filter="aftermath" aria-pressed="false">Weeks after</button>
+      </div>
+      <div id="personList"></div>
+    </div>
+
+    <div id="staticSidebar" style="display:none;">
+      <h2>FIXED POSITIONS</h2>
+      <div id="entryList"></div>
+
+      <div class="legend" style="border-top:1px solid var(--rule); padding-top:18px;">
+        <h2>LOOKING FOR MORE?</h2>
+        <p class="legend-note" style="margin-top:0;">Hundreds more photographs from fixed positions across the city exist - but without an individually documented location for each contributor, adding them here would mean inventing a spot on the map, which this project won't do. Two real, browsable collections instead:</p>
+        <p class="legend-note"><a href="https://www.icp.org/browse/archive/collections/september-11-archive" target="_blank" rel="noopener" style="color:var(--brass); border-bottom:1px solid var(--brass); text-decoration:none;">ICP's September 11 Archive ↗</a> - 1,500+ objects, including photographs by both photojournalists and bystanders.</p>
+        <p class="legend-note"><a href="https://911digitalarchive.org/" target="_blank" rel="noopener" style="color:var(--brass); border-bottom:1px solid var(--brass); text-decoration:none;">September 11 Digital Archive ↗</a> - 150,000+ digital files, now part of the Library of Congress collection.</p>
+      </div>
+    </div>
+
+    <button class="about-toggle" id="aboutToggle" aria-expanded="false" aria-controls="aboutBox">About this prototype</button>
+    <div class="about-box" id="aboutBox">
+      This is a working demonstration, not a finished archive. Coordinates for the towers and the firehouse are real; other waypoints are placed as approximate, illustrative pins along a documented or reconstructed route - not survey-accurate positions. No photograph or video is hosted or reproduced here: every media card links out to the institution or estate that holds the rights, and video only embeds when a specific, verified official video ID has been confirmed. Before publishing exact positions or times, verify them against primary sources, ideally with input from historians, the 9/11 Memorial &amp; Museum, and the individuals' families or estates.
+      <p style="margin-top:12px; padding-top:12px; border-top:1px solid var(--rule);">A note on omissions: this record does not include every widely known photograph of the day. Richard Drew's photograph of a man falling from the North Tower is, by most accounts, the single most historically significant image from September 11 - but the man in it has never been positively identified, and families who believe they recognize him have asked that he not be named in connection with it. Out of respect for that, this project has chosen not to feature, link to, embed, or otherwise discuss that photograph beyond this note.</p>
+      <p style="margin-top:12px; padding-top:12px; border-top:1px solid var(--rule);">The Fixed Vantage Points mode is deliberately narrow: only positions with an independently documented location and description of what was captured are included. It is not a catalog of every photograph from the day - the September 11 Photo Project alone holds work from more than 700 contributors, most without individually documented vantage points, which is why they aren't listed here.</p>
+      <p style="margin-top:12px; padding-top:12px; border-top:1px solid var(--rule);">A note on the "Circa 2001" basemap: it's built from New York City's own 2001 aerial survey, and most of the city in it does predate the attacks. The World Trade Center site itself is the one exception - that specific imagery was replaced with a later flight documenting the cleared site during the recovery, so it shows the aftermath, not the standing towers.</p>
+    </div>
+  </aside>
+
+  <main>
+    <div class="section-label-row">
+      <h3 class="section-label">Map</h3>
+      <div class="map-controls" role="group" aria-label="Basemap">
+        <button class="tile-btn" data-layer="drawn" aria-pressed="false">Drawn (muted)</button>
+        <button class="tile-btn active" data-layer="satellite" aria-pressed="true">Satellite - today</button>
+        <button class="tile-btn" data-layer="historical" aria-pressed="false">Circa 2001</button>
+      </div>
+    </div>
+    <div class="map-legend" id="moversMapLegend">
+      <div class="map-legend-item"><span class="legend-swatch"></span><b>Confirmed</b> - timestamped footage, photograph, or strongly corroborated firsthand account.</div>
+      <div class="map-legend-item"><span class="legend-swatch reconstructed"></span><b>Reconstructed</b> - drawn from multiple consistent secondary accounts.</div>
+      <div class="map-legend-item"><span class="legend-swatch estimated"></span><b>Estimated</b> - a single source, or a position inferred from timing and geography.</div>
+    </div>
+    <div class="map-legend" id="staticMapLegend" style="display:none;">
+      <div class="map-legend-item"><span class="legend-swatch estimated" style="border-top-style:dotted; border-top-width:3px; border-color:var(--brass);"></span><b>Line of sight</b> - what was visible from this position, toward the towers, as described in the source material. Not a survey measurement.</div>
+    </div>
+    <div class="map-frame">
+      <div id="map"></div>
+      <div id="mapDiag" class="map-diag" style="display:none;"></div>
+      <div class="map-caption">Real coordinates for the towers and firehouse · other points are approximate pins along the route</div>
+    </div>
+
+    <button type="button" class="scroll-cue" id="scrollCue">
+      <span id="scrollCueText">Timeline &amp; full detail below</span>
+      <span class="scroll-cue-arrow" aria-hidden="true">⌄</span>
+    </button>
+
+    <div id="moversMain">
+      <h3 class="section-label">Timeline</h3>
+      <div class="timeline">
+        <button class="tl-btn" id="prevBtn" aria-label="Previous waypoint">‹</button>
+        <div class="tl-track" id="tlTrack"><div class="tl-line"></div></div>
+        <button class="tl-btn" id="nextBtn" aria-label="Next waypoint">›</button>
+      </div>
+
+      <h3 class="section-label">Detail</h3>
+      <div class="detail" id="detail"></div>
+
+      <h3 class="section-label">Media source</h3>
+      <div class="person-hero" id="personHero"></div>
+    </div>
+
+    <div id="staticMain" style="display:none;">
+      <h3 class="section-label">Detail</h3>
+      <div class="detail" id="staticDetail"></div>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>This is a non-commercial preservation project - built with no commercial intent, to document and safeguard the public historical record of September 11, 2001, freely and openly. It is not affiliated with, endorsed by, or produced on behalf of the National September 11 Memorial &amp; Museum or any of the individuals, families, or estates referenced here.</p>
+    <p>If this work is meaningful to you, please don't send anything to its creator - instead, consider a donation to the National September 11 Memorial &amp; Museum, which cares for the site, supports victims' families, and sustains public education about that day.</p>
+    <p style="margin-top:12px; padding-top:12px; border-top:1px solid rgba(239,233,218,0.15);">A note on the roster photos: the small circular avatars next to some names are photos of that person, not their own work, and are shown only where a specific image is verifiably public domain or Creative Commons–licensed, with the photographer credited in that person's sources. Everyone else is shown by initials rather than a photo pulled from an agency or estate without a clear right to reuse it.</p>
+    <div class="footer-links">
+      <a href="https://www.911memorial.org/donate" target="_blank" rel="noopener">Donate to the 9/11 Memorial &amp; Museum ↗</a>
+      <a href="mailto:bearingwitness911@gmail.com">Report an error or send a correction ↗</a>
+    </div>
+  </div>
+</footer>
+
+<div class="video-lightbox" id="videoLightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <button type="button" class="close" id="lightboxClose">Close ✕</button>
+  <div class="frame-wrap"></div>
+</div>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
