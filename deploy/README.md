@@ -41,3 +41,7 @@ Designed for GitHub Pages: push to a repository, enable Pages in repo settings (
 ## Contact
 
 Errors, corrections, or source issues: see the link in the site footer.
+
+## AI Usage
+
+This project was researched and developed with the assistance of Claude (Anthropic), directed, fact-checked, and edited by Shaun Lappin. All editorial decisions - what to include, how to handle sensitive material, and where to draw lines respectfully - were mine.
