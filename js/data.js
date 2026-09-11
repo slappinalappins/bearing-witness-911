@@ -15,11 +15,11 @@ const PEOPLE = [
     category: 'day',
     sources: [
       'Roster photo of Naudet himself: Anders Krusberg, 62nd Annual Peabody Awards (2003), via Wikimedia Commons - CC BY 2.0',
-      '“9/11” (Jules & Gedeon Naudet, Goldfish Pictures / CBS, 2002)',
-      'Jules Naudet, “Under Attack” - CBS News (excerpt from “What We Saw”)',
+      '"9/11" (Jules & Gedeon Naudet, Goldfish Pictures / CBS, 2002)',
+      'Jules Naudet, "Under Attack" - CBS News (excerpt from "What We Saw")',
       'Published FDNY Battalion 1 accounts and interviews',
       'National September 11 Memorial & Museum, first-person account archive',
-      'Spirituality & Practice, film review - “9/11: The Filmmakers Commemorative Edition”'
+      'Spirituality & Practice, film review - "9/11: The Filmmakers Commemorative Edition"'
     ],
     waypoints: [
       { time:'08:30', place:'Firehouse, 100 Duane Street', lat:40.715339, lng:-74.0063, conf:'confirmed',
@@ -49,10 +49,10 @@ const PEOPLE = [
     category: 'day',
     sources: [
       'International Center of Photography, Bill Biggart archive',
-      'The Digital Journalist - “Bill Biggart\'s Final Exposures” (authorized photo essay)',
+      'The Digital Journalist - "Bill Biggart\'s Final Exposures" (authorized photo essay)',
       'billbiggart.com (maintained by his estate)',
-      'CBS News, “Bill Biggart: Final Exposures”',
-      'National September 11 Memorial & Museum blog - “Remembering the Only Photojournalist Lost on 9/11”'
+      'CBS News, "Bill Biggart: Final Exposures"',
+      'National September 11 Memorial & Museum blog - "Remembering the Only Photojournalist Lost on 9/11"'
     ],
     waypoints: [
       { time:'~08:46', place:'Near Union Square', lat:40.7359, lng:-73.9911, conf:'confirmed',
@@ -60,8 +60,8 @@ const PEOPLE = [
       { time:'~08:50', place:'Home, near Union Square', lat:40.7359, lng:-73.9911, conf:'confirmed',
         text:'He returns home to gather his equipment: a Canon D30 digital camera, two Canon EOS-1N film bodies, and several rolls of film, before heading downtown.',
         media: [
-          { type:'link', title:'His life and final assignment', credit:'National September 11 Memorial & Museum blog', note:'“Remembering the Only Photojournalist Lost on 9/11.”', url:'https://www.911memorial.org/connect/blog/remembering-only-photojournalist-lost-911' },
-          { type:'link', title:'“Bill Biggart: Final Exposures”', credit:'CBS News', note:'Contemporary CBS News report on the recovery of his photographs.', url:'https://www.cbsnews.com/news/bill-biggart-final-exposures/' }
+          { type:'link', title:'His life and final assignment', credit:'National September 11 Memorial & Museum blog', note:'"Remembering the Only Photojournalist Lost on 9/11."', url:'https://www.911memorial.org/connect/blog/remembering-only-photojournalist-lost-911' },
+          { type:'link', title:'"Bill Biggart: Final Exposures"', credit:'CBS News', note:'Contemporary CBS News report on the recovery of his photographs.', url:'https://www.cbsnews.com/news/bill-biggart-final-exposures/' }
         ] },
       { time:'~09:00–09:30', place:'Heading downtown', lat:40.7247, lng:-74.0000, conf:'reconstructed',
         text:'He makes his way toward the World Trade Center, as he had for many breaking news stories near his home.' },
@@ -72,7 +72,7 @@ const PEOPLE = [
         media: [
           { type:'photo', title:'His final photograph - view it directly', credit:'Bill Biggart, via The Digital Journalist', note:'Published as an authorized essay with cooperation from his widow, Wendy Doremus, after his cameras were recovered. Not reproduced here - this links straight to the actual photograph.', url:'https://digitaljournalist.org/issue0111/biggart21.htm' },
           { type:'photo', title:'His September 11th photo essay', credit:'billbiggart.com - maintained by his estate', note:'His widow\'s own account of that morning, alongside his photographs.', url:'https://www.billbiggart.com/september-11th' },
-          { type:'link', title:'Full recovery story', credit:'The Digital Journalist - “Bill Biggart\'s Final Exposures”', note:'How his cameras and final images were recovered from the site.', url:'https://digitaljournalist.org/issue0111/biggart_intro.htm' }
+          { type:'link', title:'Full recovery story', credit:'The Digital Journalist - "Bill Biggart\'s Final Exposures"', note:'How his cameras and final images were recovered from the site.', url:'https://digitaljournalist.org/issue0111/biggart_intro.htm' }
         ] }
     ]
   },
@@ -84,7 +84,7 @@ const PEOPLE = [
     category: 'aftermath',
     sources: [
       'FEMA News Photo archive, U.S. Dept. of Homeland Security Media Library',
-      '9/11 Memorial & Museum blog - “Up Close at Ground Zero: FEMA Photos by Andrea Booher”',
+      '9/11 Memorial & Museum blog - "Up Close at Ground Zero: FEMA Photos by Andrea Booher"',
       'Wikimedia Commons - Category:Andrea Booher (public domain, U.S. government works)'
     ],
     waypoints: [
@@ -130,9 +130,9 @@ const PEOPLE = [
     category: 'day',
     sources: [
       'Roster photo of Clark himself: self-portrait, via Wikimedia Commons - CC BY-SA 4.0, permission verified (VRT)',
-      'Burn Magazine / Rob Clark Institute - “From my roof on 9-11” (first-person interview)',
+      'Burn Magazine / Rob Clark Institute - "From my roof on 9-11" (first-person interview)',
       'World Press Photo - 2002 award collection, Robert Clark',
-      'National Geographic - “This Never Before Seen Photo Captures Grief of 9/11”'
+      'National Geographic - "This Never Before Seen Photo Captures Grief of 9/11"'
     ],
     waypoints: [
       { time:'~08:30', place:'475 Kent Avenue, Williamsburg, Brooklyn', lat:40.7104, lng:-73.9655, conf:'confirmed',
@@ -157,9 +157,10 @@ const PEOPLE = [
     initials: 'DH',
     category: 'day',
     sources: [
-      'National September 11 Memorial & Museum blog - “Stories of Hope: Rescued from the Rubble”',
-      'NPPA (National Press Photographers Association) magazine - “Never Forget: 21 Years Later, the Pictures Resonate”',
-      'The Daily Beast - “Photographer David Handschuh Hunts for His 9/11 \'Guardian Angel\'”',
+      'National September 11 Memorial & Museum blog - "Stories of Hope: Rescued from the Rubble"',
+      'NPPA (National Press Photographers Association) magazine - "Never Forget: 21 Years Later, the Pictures Resonate"',
+      'The Daily Beast - "Photographer David Handschuh Hunts for His 9/11 \'Guardian Angel\'"',
+      'NBC News - "Photojournalist Survived Close Call with South Tower Collapse on 9/11"',
       'ABC7 New York - 20th anniversary coverage'
     ],
     waypoints: [
@@ -183,9 +184,9 @@ const PEOPLE = [
     initials: 'SP',
     category: 'day',
     sources: [
-      'Arab News - “Photographer behind iconic 9/11 New York image recalls the date that lives in infamy”',
-      'CNN - “The 9/11 photos we will never forget”',
-      'Popular Photography - “9.11.01: The Photographers\' Stories, Pt. 3”',
+      'Arab News - "Photographer behind iconic 9/11 New York image recalls the date that lives in infamy"',
+      'CNN - "The 9/11 photos we will never forget"',
+      'Popular Photography - "9.11.01: The Photographers\' Stories, Pt. 3"',
       'suzanneplunkett.com (her official site)'
     ],
     waypoints: [
@@ -207,10 +208,10 @@ const PEOPLE = [
     initials: 'GS',
     category: 'day',
     sources: [
-      'Blind Magazine - “Gulnara Samoilova: A Woman Journalist at Ground Zero”',
-      'Marie Claire - “Gulnara Samoilova on Capturing 9/11 Award-Winning Photos”',
-      'Popular Photography - “9.11.01: The Photographers\' Stories, Pt. 3”',
-      'Gothamist - “One AP Photographer\'s Iconic 9/11 Shot”'
+      'Blind Magazine - "Gulnara Samoilova: A Woman Journalist at Ground Zero"',
+      'Marie Claire - "Gulnara Samoilova on Capturing 9/11 Award-Winning Photos"',
+      'Popular Photography - "9.11.01: The Photographers\' Stories, Pt. 3"',
+      'Gothamist - "One AP Photographer\'s Iconic 9/11 Shot"'
     ],
     waypoints: [
       { time:'~08:46', place:'Apartment, four blocks from the World Trade Center', lat:40.7145, lng:-74.0090, conf:'confirmed',
@@ -232,7 +233,7 @@ const PEOPLE = [
     category: 'day',
     sources: [
       'New York Press Photographers Association - Todd Maisel\'s own first-person account',
-      'New York State Museum - “Witness to 9/11” exhibition (Maisel & Handschuh)',
+      'New York State Museum - "Witness to 9/11" exhibition (Maisel & Handschuh)',
       'Library of Congress, Prints & Photographs Division',
       'toddmaiselvisualjournalism.com (his official site)'
     ],
@@ -249,7 +250,7 @@ const PEOPLE = [
         text:'He also assists fellow photographer David Handschuh after Handschuh is critically injured in the South Tower\'s collapse - their paths crossing amid the chaos.' },
       { time:'Following week', place:'Ground Zero', lat:40.7118, lng:-74.0120, conf:'confirmed',
         text:'Maisel spends the following week at the site, photographing the search-and-rescue and recovery effort - work later exhibited, alongside Handschuh\'s, at the New York State Museum for the 25th anniversary.',
-        media: [ { type:'link', title:'“Witness to 9/11” exhibition', credit:'New York State Museum', note:'A 2026 exhibition of Maisel and Handschuh\'s photographs marking the 25th anniversary.', url:'https://nysm.nysed.gov/exhibitions/witness-to-9-11/resources' } ] }
+        media: [ { type:'link', title:'"Witness to 9/11" exhibition', credit:'New York State Museum', note:'A 2026 exhibition of Maisel and Handschuh\'s photographs marking the 25th anniversary.', url:'https://nysm.nysed.gov/exhibitions/witness-to-9-11/resources' } ] }
     ]
   },
   {
@@ -277,14 +278,14 @@ const PEOPLE = [
     name: 'James Nachtwey',
     role: 'War photographer, contract photographer for TIME',
     initials: 'NA',
-    avatar: avatarMedia('Nachtwey_MSK2011.jpg', 'Victor ‘rdfr’ Morozov, Moscow, 2011 - CC BY 3.0'),
+    avatar: avatarMedia('Nachtwey_MSK2011.jpg', 'Victor \u2018rdfr\u2019 Morozov, Moscow, 2011 - CC BY 3.0'),
     category: 'day',
     sources: [
-      'Roster photo of Nachtwey himself: Victor ‘rdfr’ Morozov, Moscow (2011), via Wikimedia Commons - CC BY 3.0',
-      'TIME - “Revisiting 9/11: Unpublished Photos by James Nachtwey” (2011)',
-      'TIME - “9/11: The Photographs That Moved Them Most” (MaryAnne Golon\'s account)',
+      'Roster photo of Nachtwey himself: Victor \u2018rdfr\u2019 Morozov, Moscow (2011), via Wikimedia Commons - CC BY 3.0',
+      'TIME - "Revisiting 9/11: Unpublished Photos by James Nachtwey" (2011)',
+      'TIME - "9/11: The Photographs That Moved Them Most" (MaryAnne Golon\'s account)',
       'To The Best Of Our Knowledge (Wisconsin Public Radio) - interview',
-      'BuzzFeed News - “Harrowing Stories Behind Some Of The Most Iconic Photos From 9/11”'
+      'BuzzFeed News - "Harrowing Stories Behind Some Of The Most Iconic Photos From 9/11"'
     ],
     waypoints: [
       { time:'~08:30', place:'Water Street loft, South Street Seaport', lat:40.7075, lng:-74.0035, conf:'confirmed',
@@ -298,7 +299,7 @@ const PEOPLE = [
         media: [ { type:'photo', title:'Revisit his contact sheets, in his own words', credit:'James Nachtwey, for TIME (2011)', note:'Ten years on, he looked at the negatives for the first time and shared previously unpublished frames.', url:'https://time.com/3528699/revisiting-911-unpublished-photos-by-james-nachtwey/' } ] },
       { time:'That evening', place:'Time & Life Building, Midtown', lat:40.7607, lng:-73.9814, conf:'confirmed',
         text:'Covered in ash, he delivers his film in person to his editors. While it is processed, exhausted, he drinks water and falls asleep in a chair - the imprint of his body and his dusty footprints still visible on the floor the next morning.',
-        media: [ { type:'link', title:'Read the editor\'s account of that night', credit:'MaryAnne Golon, former Director of Photography, TIME', note:'Published in TIME\'s “The Photographs That Moved Them Most.”', url:'https://time.com/3449480/911-the-photographs-that-moved-them-most/' } ] }
+        media: [ { type:'link', title:'Read the editor\'s account of that night', credit:'MaryAnne Golon, former Director of Photography, TIME', note:'Published in TIME\'s "The Photographs That Moved Them Most."', url:'https://time.com/3449480/911-the-photographs-that-moved-them-most/' } ] }
     ]
   },
   {
@@ -310,10 +311,10 @@ const PEOPLE = [
     category: 'day',
     sources: [
       'Roster photo of McCurry himself: Christopher Michel (2024), via Wikimedia Commons - CC BY-SA 4.0',
-      'Popular Photography (American Photo) - “Steve McCurry: The Ground Zero Photographs,” his own account',
-      'CNN - “9/11 images are seared into photographers\' memories”',
-      'Artforum - “September 11 in image and print”',
-      'The Daily Beast - “From ‘Afghan Girl’ to Ground Zero, the World Through Steve McCurry\'s Lens”'
+      'Popular Photography (American Photo) - "Steve McCurry: The Ground Zero Photographs," his own account',
+      'CNN - "9/11 images are seared into photographers\' memories"',
+      'Artforum - "September 11 in image and print"',
+      'The Daily Beast - "From \u2018Afghan Girl\u2019 to Ground Zero, the World Through Steve McCurry\'s Lens"'
     ],
     waypoints: [
       { time:'~08:30', place:'Studio near Washington Square, Greenwich Village', lat:40.7308, lng:-73.9973, conf:'confirmed',
@@ -322,10 +323,10 @@ const PEOPLE = [
         text:'His assistant\'s mother calls the studio to say the World Trade Center is burning.' },
       { time:'~09:00', place:'Rooftop, north side of Washington Square', lat:40.7312, lng:-73.9975, conf:'confirmed',
         text:'He runs to the roof, which has an unobstructed view of the towers, and begins photographing - capturing both towers on fire and, soon after, the collapse.',
-        media: [ { type:'link', title:'His photographs, discussed by fellow Magnum photographers', credit:'CNN, 2016', note:'On the collective book “New York September 11” and the photographers who made it.', url:'https://www.cnn.com/2016/09/08/us/new-york-9-11-magnum-photographers/index.html' } ] },
+        media: [ { type:'link', title:'His photographs, discussed by fellow Magnum photographers', credit:'CNN, 2016', note:'On the collective book "New York September 11" and the photographers who made it.', url:'https://www.cnn.com/2016/09/08/us/new-york-9-11-magnum-photographers/index.html' } ] },
       { time:'That night', place:'Near the West Side Highway, Ground Zero perimeter', lat:40.7145, lng:-74.0155, conf:'confirmed',
         text:'He heads downtown, cuts a hole in a cyclone fence near the West Side Highway, and slips into Ground Zero without press credentials to photograph firefighters working atop the ruins.',
-        media: [ { type:'photo', title:'Read his own account of that night', credit:'Steve McCurry, interviewed for American Photo\'s “9/11: The Photographers\' Stories”', note:'A detailed oral history, in his own words.', url:'https://www.popphoto.com/american-photo/steve-mccurry-ground-zero-photographs/' } ] },
+        media: [ { type:'photo', title:'Read his own account of that night', credit:'Steve McCurry, interviewed for American Photo\'s "9/11: The Photographers\' Stories"', note:'A detailed oral history, in his own words.', url:'https://www.popphoto.com/american-photo/steve-mccurry-ground-zero-photographs/' } ] },
       { time:'Sept 12, 2001', place:'Ground Zero', lat:40.7118, lng:-74.0122, conf:'confirmed',
         text:'He returns early the next morning and keeps photographing before being caught and escorted off the site by police. He does not go back again.' }
     ]
@@ -337,7 +338,7 @@ const PEOPLE = [
     initials: 'JL',
     category: 'day',
     sources: [
-      'CNN - “The 9/11 photos we will never forget” (his own quote)',
+      'CNN - "The 9/11 photos we will never forget" (his own quote)',
       'The Pulitzer Prizes - 2002 Breaking News Photography, Staff of The New York Times',
       'justinlane.photoshelter.com (his official portfolio)'
     ],
@@ -345,7 +346,7 @@ const PEOPLE = [
       { time:'That morning', place:'Heading downtown', lat:40.7350, lng:-73.9950, conf:'reconstructed',
         text:'A New York Times staff photographer, Lane makes his way toward Lower Manhattan as the scene unfolds.' },
       { time:'After the collapse', place:'Church & Dey Streets', lat:40.7108, lng:-74.0107, conf:'confirmed',
-        text:'“As I made my way downtown to the area where this picture was taken, on Church Street near the intersection with Dey Street, it was difficult to make sense of what was going on,” Lane later said. “The city blocks were unrecognizable with dust and smoke.”',
+        text:'"As I made my way downtown to the area where this picture was taken, on Church Street near the intersection with Dey Street, it was difficult to make sense of what was going on," Lane later said. "The city blocks were unrecognizable with dust and smoke."',
         media: [ { type:'photo', title:'View the photograph', credit:'Justin Lane / The New York Times', note:'Part of the Times staff coverage awarded the 2002 Pulitzer Prize for Breaking News Photography.', url:'https://justinlane.photoshelter.com/image/I0000iHOmn56OwHM' } ] },
       { time:'Same day', place:'Near the World Trade Center site', lat:40.7115, lng:-74.0115, conf:'confirmed',
         text:'He also photographs firefighters and paramedics assisting the injured in the immediate aftermath - part of the wider Times staff effort that day.' }
@@ -377,7 +378,8 @@ const PEOPLE = [
     category: 'day',
     sources: [
       'NBC News - "New aerial photos of 9/11 attack released"',
-      'National Institute of Standards and Technology (NIST) - released via ABC News FOIA request',
+      'National Institute of Standards and Technology (NIST) WTC Investigation Photo Repository - specific photograph gjs-wtc013, released via ABC News FOIA request',
+      'NPR - "Detective Shot Aerial Photos Of The Twin Towers" (his own interview)',
       'The Associated Press - interview quotes'
     ],
     waypoints: [
@@ -385,17 +387,16 @@ const PEOPLE = [
         text:'Semendinger and his pilot are first in the air, searching for survivors who might be trapped on the towers\' rooftops. From the cockpit, he watches the second plane strike the South Tower.' },
       { time:'After the collapses', place:'Circling above the World Trade Center site', lat:40.7100, lng:-74.0160, conf:'reconstructed',
         text:'He continues taking photographs from the air as the towers collapse and the dust cloud spreads across Lower Manhattan, documenting a wide-angle view of the devastation not available from the ground.',
-        media: [ { type:'link', title:'On the aerial photographs\' release', credit:'NBC News', note:'How NIST\'s FOIA-released images, including Semendinger\'s, came to light.', url:'https://www.nbcnews.com/id/wbna35330966' } ] },
+        media: [
+          { type:'link', title:'On the aerial photographs\' release', credit:'NBC News', note:'How NIST\'s FOIA-released images, including Semendinger\'s, came to light.', url:'https://www.nbcnews.com/id/wbna35330966' },
+          { type:'link', title:'The exact photograph, with full metadata', credit:'Greg Semendinger, via NIST WTC Investigation archive', note:'Timestamped 10:07:04 a.m., shot facing west from the NYPD helicopter. Not public domain - NIST published it under FOIA, but the copyright remains with Semendinger/NYPD, not the federal government.', url:'https://archive.org/details/GregSemendinger_gjs-wtc013' }
+        ] },
       { time:'That day', place:'Airborne, searching the site', lat:40.7120, lng:-74.0120, conf:'confirmed',
         text:'"We didn\'t find one single person. It was surreal," he later said of the search. "There was no sound whatsoever, but the noise of the radio and the helicopter. I just kept taking pictures." He shot three rolls of film.' }
     ]
   }
 ];
 
-// --- Fixed vantage-point entries (Vantage Points mode) ---
-// `time` here is a rough internal sort key only (when the captured moment happened),
-// not a sourced, displayed fact - it's approximated from each narrative below where
-// no source states an exact time, so it shouldn't be shown on the page as a claim.
 const ENTRIES = [
   {
     id: 'staehle',
@@ -514,6 +515,34 @@ const ENTRIES = [
     ],
     media: [
       { type:'photo', title:'Read the full story, with the photograph', credit:'Alex Webb / Magnum Photos, via Smithsonian Magazine', note:'Includes Jenna Piccirillo\'s own account and a follow-up visit two years later.', url:'https://www.smithsonianmag.com/arts-culture/september-11-from-a-brooklyn-rooftop-89680350/' }
+    ]
+  },
+  {
+    id: 'culbertson',
+    name: 'Frank Culbertson',
+    initials: 'FC',
+    time: '~09:59',
+    role: 'NASA astronaut - Commander, ISS Expedition Three',
+    location: 'Aboard the International Space Station, ~250 miles above Earth',
+    lat: 40.75, lng: -73.98,
+    locationConf: 'reconstructed',
+    narrative: 'Culbertson, the only American not on Earth that day, was aboard the ISS when he learned of the attacks from the flight surgeon on the ground. He found a window with a view toward New York and grabbed the nearest camera - a video camera - in crewmate Mikhail Tyurin\'s cabin. "The smoke seemed to have an odd bloom to it at the base of the column," he later wrote, guessing he was likely looking at the city around the time of, or shortly after, the South Tower\'s collapse. He scanned the coastline for smoke near Washington but saw none.',
+    sightline: 'A view unlike any other that day: the full New York City area and the Eastern Seaboard laid out at once, from an altitude of roughly 250 miles - high enough to see the smoke plume\'s shape, but too far to see anything at street level.',
+    sources: [
+      'NASA - "Astronaut Frank Culbertson Letter from September 11, 2001" (his own account, in full)',
+      'NASA - image ISS003-E-5388, official mission photography',
+      'Live Science - "25 years ago, a NASA astronaut captured this haunting photo of the 9/11 attacks"'
+    ],
+    media: [
+      {
+        type: 'image',
+        title: 'The photograph, direct from NASA',
+        credit: 'NASA / Frank Culbertson - public domain (U.S. government work)',
+        note: 'Taken by a NASA astronaut during an official ISS mission. Genuinely public domain - no license needed, unlike most other sources in this project.',
+        src: 'https://www.nasa.gov/wp-content/uploads/2023/12/074602b1-9502028725-o.jpg',
+        fullSrc: 'https://www.nasa.gov/wp-content/uploads/2023/12/074602b1-9502028725-o.jpg',
+        url: 'https://www.nasa.gov/humans-in-space/astronaut-frank-culbertson-letter-from-september-11-2001/'
+      }
     ]
   }
 ];
